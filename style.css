@@ -1,7 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 * {
     box-sizing: border-box;
+    /* font-family: 'Fresca', sans-serif; */
 }
 
-.image {
-    height: 500px;
+
+.container {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+    /* align-items: center; */
+
+}
+
+
+.left img {
+    height: 100vh;
+    width: 40vw;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+p:last-child {
+    margin-right: 30px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(128, 128, 128, 0.088);
+    /* padding: 30px */
+
+
+}
+main {
+    font-size: 20px;
+    font-weight: 500;
+    /* padding: 30px */
+}
+
+main, .outer {
+    padding: 30px;
+}
+
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.form {
+    /* flex-wrap: wrap;
+    flex-basis: 50%; */
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+
+
+}
+
+.form div {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 60px;
+    margin-bottom: 10px;
+}
+
+.form input {
+    margin-top: 5px;
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border: #E5E7EB solid 1px;
+    outline: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    display: block;
+    background-color: #D1702E;
+    border: #E5E7EB;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    /* font-weight: 700; */
+}
+
+input:focus  {
+    outline: 1px solid #86c5da 
+}
+
+input.error:focus:placeholder-shown {
+    outline: 1px solid red;
+}
+
+input:not(:placeholder-shown) {
+    outline: 1px solid lightgreen
+}
+
+.btn:hover {
+    background: #97572c;
+    cursor: pointer;
+
+}
+
+.login a {
+    color: #D1702E;
+    text-decoration: none;
+}
+
+.logo img {
+    position: absolute;
+    object-fit: contain;
+    height: 100px;
+    top: 5%;
+    background:rgba(0, 0, 0, 0.393)
+
 }
